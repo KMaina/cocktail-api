@@ -14,12 +14,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
 from django.urls import path, include
 
-# from cocktails.apps.drinks.urls import router
+schema_view = get_schema_view(
+    openapi.Info(
+        title="Django RBAC Project",
+        default_version='v1',
+        description="An app to showcase RBAC",
+    ),
+    public=True,
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('api/', include(router.urls))
     path('api/', include('cocktails.apps.drinks.urls', namespace='drinks')),
+     path('swagger/', schema_view.with_ui('swagger',
+                                         cache_timeout=0), name='schema-swagger-ui'),
 ]

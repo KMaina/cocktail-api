@@ -51,15 +51,8 @@ export SECRET_KEY="your secret"
 - Run the server `python manage.py runserver`
 
 ## Using the app
-- In Postman navigate to `https://afternoon-ocean-11319.herokuapp.com/api/login/`
-- Use the following credentials to log in
-```
-{
-    "email": "att1@me.com",
-    "password": "1234"
-}
-```
-- Use the token to register new users into the app
+- In Postman navigate to `https://ken-cocktail-api.herokuapp.com`
+
 ## Run Tests
 -Run your tests `pytest`
 

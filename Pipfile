@@ -13,6 +13,7 @@ flake8 = "*"
 django-extensions = "*"
 gunicorn = "*"
 django-on-heroku = "*"
+drf-yasg = "*"
 
 [dev-packages]
 

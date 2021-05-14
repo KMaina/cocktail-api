@@ -46,7 +46,7 @@ class UpdateCustomCocktail(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
-class SaveFetchedCocktails(ListCreateAPIView):
+class SaveFetchedCocktails(APIView):
     serializer_class = DrinkSerializer
 
     def get(self, request):
