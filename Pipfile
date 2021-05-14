@@ -11,6 +11,8 @@ pytest-django = "*"
 requests = "*"
 flake8 = "*"
 django-extensions = "*"
+gunicorn = "*"
+django-on-heroku = "*"
 
 [dev-packages]
 

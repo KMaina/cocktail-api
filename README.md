@@ -30,7 +30,7 @@ These instructions will get you a copy of the project up and running in your loc
 
 ### Setting up and Activating a Virtual Environment
 - Create a working space in your local machine
-- Clone this [repository](https://github.com/KMaina/django_rbac/) `git clone https://github.com/KMaina/django_rbac.git`
+- Clone this [repository](https://github.com/KMaina/cocktail-api/) `git clone https://github.com/KMaina/cocktail-api.git`
 - Navigate to the project directory
 - Create a virtual environment `pipenv shell`
 - Create a .env file and put these key=values in it:
@@ -62,6 +62,9 @@ export SECRET_KEY="your secret"
 - Use the token to register new users into the app
 ## Run Tests
 -Run your tests `pytest`
+
+## Linting
+- Run `flake8` in your target branch
 
 ## API Spec
 The documentation can be found on https://afternoon-ocean-11319.herokuapp.com/swagger/
