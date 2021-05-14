@@ -20,9 +20,9 @@ from django.urls import path, include
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Django RBAC Project",
+        title="Django Cocktail API",
         default_version='v1',
-        description="An app to showcase RBAC",
+        description="An app to create and get cocktail recipes",
     ),
     public=True,
 )
