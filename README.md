@@ -60,4 +60,4 @@ export SECRET_KEY="your secret"
 - Run `flake8` in your target branch
 
 ## API Spec
-The documentation can be found on https://afternoon-ocean-11319.herokuapp.com/swagger/
+The documentation can be found on https://ken-cocktail-api.herokuapp.com/swagger/
